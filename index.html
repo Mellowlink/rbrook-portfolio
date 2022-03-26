@@ -18,6 +18,11 @@
     <meta name="twitter:url" content="http://rebeccabrook.ca/" />
 
     <title>Rebecca Brook | Home</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -66,6 +71,21 @@
       </ul>
     </nav>
     <!-- End Desktop Header & Menu -->
+    <!-- Mobile Header & Menu -->
+    <nav class="navbar navbar-mobile navbar-expand-lg mobile-show fixed-top">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="./">Rebecca Brook</a>
+      <!-- Toggle button -->
+      <button type="button" class="btn btn-light btn-floating" data-mdb-ripple-color="dark" onclick="showMenu()">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <!-- Collapsible wrapper -->
+    <div id="navbar-side-menu" class="collapse navbar-collapse mobile-show fixed-top">
+      <ul id="nav-items-mobile" class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+    </div>
+    <!-- End Mobile Header & Menu -->
     <div>BGAH~</div>
     <div>BGAH~</div>
     <div>BGAH~</div>
