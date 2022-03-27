@@ -57,7 +57,6 @@
   </head>
   <body>
     <!-- Desktop Header & Menu -->
-    <!-- Desktop -->
     <nav class="navbar justify-content-center mobile-hide">
         <div class="navbar-full"><a class="navbar-brand" href="./">Rebecca Brook</a></div>
         <ul id="nav-items" class="navbar-nav navbar-top-big mt-lg-0">
@@ -73,108 +72,54 @@
     <!-- End Desktop Header & Menu -->
     <!-- Mobile Header & Menu -->
     <nav class="navbar navbar-mobile navbar-expand-lg mobile-show fixed-top">
-      <!-- Navbar brand -->
       <a class="navbar-brand" href="./">Rebecca Brook</a>
-      <!-- Toggle button -->
       <button type="button" class="btn btn-light btn-floating" data-mdb-ripple-color="dark" onclick="showMenu()">
         <i id="menu-icon" class="fas fa-bars"></i>
       </button>
     </nav>
-    <!-- Collapsible wrapper -->
     <div id="navbar-side-menu" class="collapse navbar-collapse mobile-show fixed-top">
       <ul id="nav-items-mobile" class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Navbar items populated in javascript here -->
       </ul>
+      <hr class="menu-divider"></hr>
+      <div id="mobile-socials" class="mobile-socials">
+        <!-- Social icons populated in javascript here- -->
+      </div>
+      <div class="copyright-mobile">
+        <span id="copyright-mobile-text">© 2022 Rebecca Brook</span>
+      </div>
     </div>
     <!-- End Mobile Header & Menu -->
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <div>BGAH~</div>
-    <!-- Mobile Header & Menu -->
-
-    <!-- End Mobile Header & Menu -->
-
     <!-- Welcome Content -->
-
+    <div class="text-center">
+      <img id="home-image-desktop" src="" class="home-image-desktop img-fluid mobile-hide" alt="" />
+      <img id="home-image-mobile" src="" class="home-image-mobile img-fluid mobile-show" alt="" />
+    </div>
     <!-- End Welcome Content -->
-
     <!-- Footer -->
+    <footer class="footer text-center text-lg-start fixed-bottom">
+      <section
+        class="d-flex justify-content-between p-2"
+      >
+        <!-- Left -->
+        <div class="me-5">
+          <span id="copyright-footer">© 2022 Rebecca Brook</span>
+        </div>
+        <!-- Left -->
 
+        <!-- Right -->
+        <div id="footer-socials">
+          <!-- Social icons populated in javascript here- -->
+        </div>
+        <!-- Right -->
+      </section>
+    </footer>
     <!-- End Footer -->
     <script>
       updatePageContent(strings, 'home');
+      updateImages(images, 'home');
       updateMenuItems(menuItems, 'home');
+      updateSocials(socialMedia);
     </script>
   </body>
 </html>

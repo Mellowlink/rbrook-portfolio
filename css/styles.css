@@ -1,3 +1,7 @@
+body{
+  margin-bottom: 36px;
+}
+
 .navbar{
   background-color: #ffffff;
 }
@@ -67,6 +71,45 @@
   top: 0px;
 }
 
+.footer{
+  background-color: #ffffff;
+  border-top: 1px solid #9c9c9c;
+  font-size: 14px;
+  color: #9c9c9c;
+}
+.footer a{
+  margin-right:16px;
+  -webkit-transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
+  -o-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+.footer a:hover{
+  opacity: 0.5;
+}
+
+.fa-instagram{
+  color: #ac2bac;
+}
+.fa-linkedin, .fa-linkedin-in{
+  color: #0078b2;
+}
+.fa-facebook, .fa-facebook-f, .fa-facebook-square{
+  color: #395693;
+}
+.fa-twitter, .fa-twitter-square{
+  color: #1c96e9;
+}
+.fa-google-plus, .fa-google-plus-g, .fa-google-plus-square{
+  color: #d14a3e;
+}
+.fa-vimeo, .fa-vimeo-square{
+  color: #3ea8d0;
+}
+.fa-youtube{
+  color: #f20000;
+}
+
 .mobile-hide{
   display: flex;
 }
@@ -90,6 +133,11 @@
   box-shadow: 0 0px 2px 0 rgb(0 0 0 / 16%), 0 2px 2px 0 rgb(0 0 0 / 12%);
 }
 
+.home-image-desktop{
+  display: initial;
+  margin-top: 16px;
+}
+
 @media screen and (max-width: 1060px) {
   .navbar-full .navbar-brand {
   font-size: 5rem;
@@ -97,6 +145,10 @@
 
   #nav-items .nav-link {
     font-size: 1.5rem;
+  }
+
+  .home-image-desktop{
+    margin-top: 36px;
   }
 }
 
@@ -123,11 +175,16 @@
   #nav-items .nav-link {
     font-size: 1.2rem;
   }
+
+  .home-image-desktop{
+    margin-top: 64px;
+  }
 }
 
 @media screen and (max-width: 800px) {
   body{
     margin-top: 86px;
+    margin-bottom: 0px;
   }
 
   .mobile-hide{
@@ -135,6 +192,10 @@
   }
   .mobile-show{
     display: flex;
+  }
+
+  .footer{
+    display: none;
   }
 
   .navbar-mobile .navbar-brand{
@@ -149,6 +210,8 @@
     top: 82px;
     text-align: center;
     width: 100%;
+
+    flex-direction: column;
 
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
@@ -177,5 +240,41 @@
   .collapse:not(.show) {
     display: block;
     left: 102%;
+  }
+
+  .menu-divider{
+    border-top: 1px solid #9c9c9c;
+    border-radius: 5px;
+    margin: 0px 0px;
+    width: 150px;
+  }
+
+  .mobile-socials{
+    margin-top: 24px;
+    margin-bottom:24px;
+    font-size: 32px;
+  }
+
+  .mobile-socials a{
+    margin-left:16px;
+    margin-right:16px;
+    -webkit-transition: opacity 0.25s;
+    -moz-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+  }
+  .mobile-socials a:hover{
+    opacity: 0.5;
+  }
+
+  .copyright-mobile{
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: #9c9c9c;
+  }
+
+  .home-image-mobile{
+    display: initial;
+    margin-top: 36px;
   }
 }
