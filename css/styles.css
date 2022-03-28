@@ -152,6 +152,20 @@ body{
   max-width: 100%;
   padding: 6px;
 }
+.gslide-image{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.glightbox-clean .gnext, .glightbox-clean .gprev{
+  background-color: rgba(0,0,0,0.1);
+}
+.glightbox:hover{
+  cursor: zoom-in;
+}
+.glightbox img:hover{
+  transform: scale(1.0625);
+  transition: 0.15s all;
+}
 
 @media screen and (max-width: 1060px) {
   .navbar-full .navbar-brand {
@@ -298,6 +312,11 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
     color: #9c9c9c;
+  }
+
+  .flexmasonry{
+    max-width: 100vw;
+    margin: 0 auto;
   }
 }
 

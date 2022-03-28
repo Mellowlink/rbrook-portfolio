@@ -16,37 +16,96 @@ const images = {
   ],
   sketchbookImages: [
     "CharacterSheet_Alvyn_solo.png",
-    "christie_bday_2020_ver04.png",
     "sam_card_rbrook.png",
     "valentines02_v02.png",
-    "CharacterSheet_Alvyn_solo0.png",
-    "christie_bday_2020_ver040.png",
     "sam_card_rbrook0.png",
     "valentines02_v020.png",
+    "CharacterSheet_Alvyn_solo0.png",
+    "christie_bday_2020_ver040.png",
+    "christie_bday_2020_ver04.png",
     "CharacterSheet_Alvyn_solo1.png",
     "christie_bday_2020_ver041.png",
     "sam_card_rbrook1.png",
     "valentines02_v021.png",
   ],
   fineArtImages: [
-    "editIMG_6714a-copy.png",
-    "ex01.jpg",
-    "ex08.jpg",
-    "stu8.jpg",
-    "editIMG_6714a-copy0.png",
-    "ex010.jpg",
-    "ex080.jpg",
-    "stu80.jpg",
-    "editIMG_6714a-copy1.png",
-    "ex011.jpg",
-    "ex081.jpg",
-    "stu81.jpg",
+    {
+      filename: "ex01.jpg",
+      title: 'Example Title',
+      description: 'A nice long example description about whatever you want including but not limited to the most obvious subject, this image'
+    },
+    {
+      filename: "editIMG_6714a-copy1.png",
+      title: 'Example Title',
+      description: 'A nice long example description about whatever you want including but not limited to the most obvious subject, this image'
+    },
+    {
+      filename: "editIMG_6714a-copy.png",
+      title: 'Example Title',
+      description: 'A nice long example description about whatever you want including but not limited to the most obvious subject, this image'
+    },
+    {
+      filename: "stu8.jpg",
+      title: 'Example Title',
+      description: 'A nice long example description about whatever you want including but not limited to the most obvious subject, this image'
+    },
+    {
+      filename: "editIMG_6714a-copy0.png",
+      title: 'Example Title',
+      description: 'A nice long example description about whatever you want including but not limited to the most obvious subject, this image'
+    },
+    {
+      filename: "ex08.jpg",
+      title: 'Example Title',
+      description: 'A nice long example description about whatever you want including but not limited to the most obvious subject, this image'
+    },
+    {
+      filename: "ex081.jpg",
+      title: 'Example Title',
+      description: 'A nice long example description about whatever you want including but not limited to the most obvious subject, this image'
+    },
+    {
+      filename: "ex010.jpg",
+      title: 'Example Title',
+      description: 'A nice long example description about whatever you want including but not limited to the most obvious subject, this image'
+    },
+    {
+      filename: "stu81.jpg",
+      title: 'Example Title',
+      description: 'A nice long example description about whatever you want including but not limited to the most obvious subject, this image'
+    },
+    {
+      filename: "ex080.jpg",
+      title: 'Example Title',
+      description: 'A nice long example description about whatever you want including but not limited to the most obvious subject, this image'
+    },
+    {
+      filename: "stu80.jpg",
+      title: 'Example Title',
+      description: 'A nice long example description about whatever you want including but not limited to the most obvious subject, this image'
+    },
+    {
+      filename: "ex011.jpg",
+      title: 'Example Title',
+      description: 'A nice long example description about whatever you want including but not limited to the most obvious subject, this image'
+    },
   ],
 }
 
-const videos = {
-  sneed: 'bgah',
-}
+const videos = [
+  {
+    url: '',
+    title: 'Title',
+    subtitle: 'A Video (Summer 1792)',
+    description: 'This is a video from a time before videos. Check it out, lol',
+  },
+  {
+    url: '',
+    title: 'Tengen Toppa Gurren Lagann',
+    subtitle: 'A Video (Autumn 2007)',
+    description: 'This is a video from a time before videos. Check it out, lol',
+  },
+]
 
 const menuItems = [
   {
