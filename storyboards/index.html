@@ -56,6 +56,60 @@
 
   </head>
   <body>
+    <!-- Desktop Header & Menu -->
+    <nav class="navbar justify-content-center mobile-hide">
+        <div class="navbar-full"><a id="brand-desktop" class="navbar-brand" href="./"></a></div>
+        <ul id="nav-items" class="navbar-nav navbar-top-big mt-lg-0">
+          <!-- Navbar items populated in javascript here -->
+        </ul>
+    </nav>
+    <nav class="navbar navbar-drop-out mobile-hide fixed-top">
+      <a id="brand-desktop-small" class="navbar-brand" href="./"></a>
+      <ul id="nav-items-top" class="navbar-nav navbar-top-big mt-lg-0">
+        <!-- Navbar items populated in javascript here -->
+      </ul>
+    </nav>
+    <!-- End Desktop Header & Menu -->
+    <!-- Mobile Header & Menu -->
+    <nav class="navbar navbar-mobile navbar-expand-lg mobile-show fixed-top">
+      <a id="brand-mobile" class="navbar-brand" href="./"></a>
+      <button type="button" class="btn btn-light btn-floating" data-mdb-ripple-color="dark" onclick="showMenu()">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div id="navbar-side-menu" class="collapse navbar-collapse mobile-show fixed-top">
+      <ul id="nav-items-mobile" class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Navbar items populated in javascript here -->
+      </ul>
+      <hr class="menu-divider"></hr>
+      <div id="mobile-socials" class="mobile-socials">
+        <!-- Social icons populated in javascript here- -->
+      </div>
+      <div class="copyright-mobile">
+        <span id="copyright-mobile-text"></span>
+      </div>
+    </div>
+    <!-- End Mobile Header & Menu -->
+
+    <!-- Footer -->
+    <footer class="footer text-center text-lg-start fixed-bottom">
+      <section
+        class="d-flex justify-content-between p-2"
+      >
+        <!-- Left -->
+        <div class="me-5">
+          <span id="copyright-footer"></span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div id="footer-socials">
+          <!-- Social icons populated in javascript here- -->
+        </div>
+        <!-- Right -->
+      </section>
+    </footer>
+    <!-- End Footer -->
     <script>
       updatePageContent(strings, 'storyboards');
       updateMenuItems(menuItems, 'storyboards');
