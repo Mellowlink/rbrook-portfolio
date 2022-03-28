@@ -49,8 +49,12 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
-    <link href="./css/styles.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
 
+    <!-- Masonry Grid -->
+    <link rel="stylesheet" href="../css/lib/flexmasonry.css">
+    <script type="text/javascript" src="../js/lib/flexmasonry.js"></script>
+    
     <script type="text/javascript" src="../js/script.js"></script>
     <script type="text/javascript" src="../constants/constants.js"></script>
 
@@ -73,6 +77,8 @@
     <!-- Mobile Header & Menu -->
     <nav class="navbar navbar-mobile navbar-expand-lg mobile-show fixed-top">
       <a id="brand-mobile" class="navbar-brand" href="./"></a>
+      <div id="mobile-page-title" class="mobile-page-title">
+      </div>
       <button type="button" class="btn btn-light btn-floating" data-mdb-ripple-color="dark" onclick="showMenu()">
         <i id="menu-icon" class="fas fa-bars"></i>
       </button>
@@ -94,7 +100,7 @@
     <!-- Footer -->
     <footer class="footer text-center text-lg-start fixed-bottom">
       <section
-        class="d-flex justify-content-between p-2"
+        class="footer-content d-flex justify-content-between p-2"
       >
         <!-- Left -->
         <div class="me-5">

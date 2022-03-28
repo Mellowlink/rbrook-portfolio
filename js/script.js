@@ -14,18 +14,22 @@ const updatePageContent = (strings, page) => {
     break;
     case 'storyboards':
       console.log('storyboards');
+      $('#mobile-page-title').html('Storyboards');
     break;
     case 'design':
-      console.log('design');
+      $('#mobile-page-title').html('Design');
     break;
     case 'sketchbook':
       console.log('sketchbook');
+      $('#mobile-page-title').html('Sketchbook');
     break;
     case 'fineart':
       console.log('fineart');
+      $('#mobile-page-title').html('Fine Art');
     break;
     case 'contact':
       console.log('contact');
+      $('#mobile-page-title').html('Contact');
     break;
   }
 }
@@ -41,6 +45,21 @@ const updateImages = (images, page) => {
     case 'storyboards':
       break;
     case 'design':
+      var gridImages = '';
+      images.designImages.map((image) => {
+        gridImages = gridImages.concat('<div class="inner"><img src="../assets/images/design/'+
+          image+'" alt="'+image+'"></div>');
+      });
+      $('#masonry-grid').html(gridImages);
+      FlexMasonry.init('.grid',{
+        responsive: true,
+        breakpointCols: {
+          'min-width: 980px': 4,
+          'min-width: 800px': 3,
+          'min-width: 576px': 2
+        },
+      });
+
       break;
     case 'sketchbook':
       break;
