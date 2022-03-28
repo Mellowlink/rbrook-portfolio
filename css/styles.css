@@ -275,6 +275,7 @@ body{
 
   .home-image-mobile{
     display: initial;
-    margin-top: 36px;
+    margin-top: 16px;
+    max-height: 920px;
   }
 }

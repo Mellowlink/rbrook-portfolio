@@ -10,7 +10,22 @@ const updatePageContent = (strings, page) => {
 
   switch(page){
     case 'home':
-    console.log('ah');
+      console.log('home');
+    break;
+    case 'storyboards':
+      console.log('storyboards');
+    break;
+    case 'design':
+      console.log('design');
+    break;
+    case 'sketchbook':
+      console.log('sketchbook');
+    break;
+    case 'fineart':
+      console.log('fineart');
+    break;
+    case 'contact':
+      console.log('contact');
     break;
   }
 }
@@ -22,6 +37,16 @@ const updateImages = (images, page) => {
       $('#home-image-desktop').attr("alt",images.homeImageDesktop);
       $('#home-image-mobile').attr("src","./assets/images/"+images.homeImageMobile);
       $('#home-image-mobile').attr("alt",images.homeImageMobile);
+      break;
+    case 'storyboards':
+      break;
+    case 'design':
+      break;
+    case 'sketchbook':
+      break;
+    case 'fineart':
+      break;
+    case 'contact':
       break;
   }
 }

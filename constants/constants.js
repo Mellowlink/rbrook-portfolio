@@ -5,7 +5,7 @@ const strings = {
 
 const images = {
   homeImageDesktop: "title_v02.png",
-  homeImageMobile: "title_v02.png",
+  homeImageMobile: "title_v02-placeholder-flipped.png",
   designImages: [
     "beclay01.jpg",
     "final_charactersheet01.jpg",
