@@ -1,5 +1,18 @@
 const updatePageContent = (strings, page) => {
-  console.log('Hey Sneed');
+  $('#brand-desktop').html(strings.logoText);
+  $('#brand-desktop-small').html(strings.logoText);
+  $('#brand-mobile').html(strings.logoText);
+
+  //always show the current year in the copyright information
+  var year = new Date().getFullYear();
+  $('#copyright-footer').html('© '+year+' Rebecca Brook');
+  $('#copyright-mobile-text').html('© '+year+' Rebecca Brook');
+
+  switch(page){
+    case 'home':
+    console.log('ah');
+    break;
+  }
 }
 
 const updateImages = (images, page) => {
