@@ -22,7 +22,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -92,7 +91,22 @@
       </div>
     </div>
     <!-- End Mobile Header & Menu -->
+    <!-- Videos -->
+    <div id="video-wrapper" class="video-wrapper">
+      <h5 class="video-title"></h5>
+      <p class="video-subtitle"></p>
+      <p class="video-description"></p>
+      <iframe class="iframe-video"
+        src=""
+        title="El Title"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <!-- End Videos -->
+    <!-- Slideshows -->
 
+    <!-- End Slideshows -->
     <!-- Footer -->
     <footer class="footer text-center text-lg-start fixed-bottom">
       <section
@@ -114,6 +128,7 @@
     <!-- End Footer -->
     <script>
       updatePageContent(strings, 'storyboards');
+      updateVideos(videos);
       updateMenuItems(menuItems, 'storyboards');
       updateSocials(socialMedia);
     </script>

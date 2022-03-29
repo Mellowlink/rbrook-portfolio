@@ -113,6 +113,30 @@ const updateImages = (images, page) => {
   }
 }
 
+const updateVideos = (videos) => {
+  var videoContent = '';
+  videos.map((video) => {
+    videoContent = videoContent.concat('<h5 class="video-title">'+
+    video.title+'</h5><p class="video-subtitle">'+
+    video.subtitle+'</p><p class="video-description">'+
+    video.description+'</p><iframe class="iframe-video"src="'+
+    video.url+'"title="'+
+    video.title+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>');
+  });
+  $('#video-wrapper').html(videoContent);
+  /*
+  <h5 class="video-title"></h5>
+  <p class="video-subtitle"></p>
+  <p class="video-description"></p>
+  <iframe class="iframe-video"
+    src=""
+    title="El Title"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+    */
+}
+
 const updateMenuItems = (menuItems, page) => {
   var rootUrl = '.';
   var pathUrl = window.location.pathname;

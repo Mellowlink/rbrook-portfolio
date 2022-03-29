@@ -94,16 +94,45 @@ const images = {
 
 const videos = [
   {
-    url: '',
-    title: 'Title',
+    url: 'https://player.vimeo.com/video/253989945?h=c6db007fe5&color=ef0800&title=0&byline=0&portrait=0',
+    title: 'El Vimeo Example',
     subtitle: 'A Video (Summer 1792)',
     description: 'This is a video from a time before videos. Check it out, lol',
   },
   {
-    url: '',
+    url: 'https://www.youtube.com/embed/_j7IzrDTx0o',
     title: 'Tengen Toppa Gurren Lagann',
-    subtitle: 'A Video (Autumn 2007)',
-    description: 'This is a video from a time before videos. Check it out, lol',
+    subtitle: 'Youtube Example (Autumn 2007)',
+    description: 'This is a youtube example video about piercing the heavens, etc.<br>おまえをしんじるおれをしんじろ',
+  },
+]
+
+const slideshows = [
+  {
+    title: 'Title',
+    subtitle: 'A Slideshow (Winter 1349)',
+    description: 'This is a slideshow from some year or whatever lol',
+    images: [
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ]
+  },
+  {
+    title: 'Testy test',
+    subtitle: 'A test slidey show (Autumn 2007)',
+    description: 'This sure is a test, plus more text to make it longer for design placeholder purposes etc.',
+    images: [
+      '',
+      '',
+      '',
+      '',
+      '',
+    ]
   },
 ]
 
