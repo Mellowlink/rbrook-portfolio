@@ -113,13 +113,12 @@ const slideshows = [
     subtitle: 'A Slideshow (Winter 1349)',
     description: 'This is a slideshow from some year or whatever lol',
     images: [
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
+      'heist1.png',
+      'heist2.png',
+      'heist3.png',
+      'heist4.png',
+      'heist5.png',
+      'heist6.png',
     ]
   },
   {
@@ -127,11 +126,11 @@ const slideshows = [
     subtitle: 'A test slidey show (Autumn 2007)',
     description: 'This sure is a test, plus more text to make it longer for design placeholder purposes etc.',
     images: [
-      '',
-      '',
-      '',
-      '',
-      '',
+      'heist1.png',
+      'heist2.png',
+      'heist3.png',
+      'heist4.png',
+      'heist5.png',
     ]
   },
 ]
