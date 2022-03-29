@@ -114,11 +114,11 @@ const slideshows = [
     description: 'This is a slideshow from some year or whatever lol',
     images: [
       'heist1.png',
-      'heist2.png',
-      'heist3.png',
-      'heist4.png',
-      'heist5.png',
-      'heist6.png',
+      'hiest2.png',
+      'hiest3.png',
+      'hiest4.png',
+      'hiest5.png',
+      'hiest6.png',
     ]
   },
   {

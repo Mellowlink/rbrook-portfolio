@@ -124,17 +124,10 @@ const updateVideos = (videos) => {
     video.title+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>');
   });
   $('#video-wrapper').html(videoContent);
-  /*
-  <h5 class="video-title"></h5>
-  <p class="video-subtitle"></p>
-  <p class="video-description"></p>
-  <iframe class="iframe-video"
-    src=""
-    title="El Title"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
-    */
+}
+
+const updateSlideshows = (slideshows) => {
+    console.log('bgah');
 }
 
 const updateMenuItems = (menuItems, page) => {

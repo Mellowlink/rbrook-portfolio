@@ -174,7 +174,7 @@ body{
   padding-right: 16px;
   text-align: center;
 }
-.video-title{
+.video-title, .slideshow-title{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #393939;
@@ -182,24 +182,37 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-.video-subtitle{
+.video-subtitle, .slideshow-subtitle{
   font-family: 'Montserrat', sans-serif;
   color: #393939;
   margin-left: auto;
   margin-right: auto;
 }
-.video-description{
+.video-description, .slideshow-description{
   font-family: 'Montserrat', sans-serif;
   color: #393939;
   margin-left: auto;
   margin-right: auto;
   max-width: 720px;
 }
+.slideshow-wrapper{
+  max-width: 1080px;
+  margin: 0px auto 60px auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
 
 .iframe-video{
     margin-bottom: 32px;
     width: 960px;
     height: 540px;
+    -webkit-box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 16%), 0 5px 10px 0 rgb(0 0 0 / 12%);
+    box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 16%), 0 5px 10px 0 rgb(0 0 0 / 12%);
+  }
+  .carousel-inner{
+    width: 960px;
+    margin: 0 auto;
     -webkit-box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 16%), 0 5px 10px 0 rgb(0 0 0 / 12%);
     box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 16%), 0 5px 10px 0 rgb(0 0 0 / 12%);
   }
@@ -218,9 +231,12 @@ body{
   }
 
   .iframe-video{
-      width: 800px;
-      height: 450px;
-    }
+    width: 800px;
+    height: 450px;
+  }
+  .carousel-inner{
+    width: 800px;
+  }
 }
 
 @media screen and (max-width: 1020px) {
@@ -254,6 +270,9 @@ body{
   .iframe-video{
     width: 640px;
     height: 360px;
+  }
+  .carousel-inner{
+    width: 640px;
   }
 }
 
@@ -375,12 +394,18 @@ body{
     width: 426px;
     height: 240px;
   }
+  .carousel-inner{
+    width: 426px;
+  }
 }
 
 @media screen and (max-width: 460px){
   .iframe-video{
     width: 256px;
     height: 144px;
+  }
+  .carousel-inner{
+    width: 256px;
   }
 }
 
