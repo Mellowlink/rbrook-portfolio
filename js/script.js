@@ -127,7 +127,32 @@ const updateVideos = (videos) => {
 }
 
 const updateSlideshows = (slideshows) => {
-    console.log('bgah');
+    var slideshowContent = '';
+    slideshows.map((slideshow) => {
+      var indicators = '';
+      var images = '';
+      slideshow.images.map((image, index) => {
+        var activeClass = '';
+        var activeImage = '';
+        if (index == 0) { activeClass = ' class="active"'; activeImage = ' active'; }
+        indicators = indicators.concat('<li data-target="#'+
+          slideshow.key+'-slideshow" data-slide-to="'+
+          index+'"'+activeClass+'></li>');
+        images = images.concat('<div class="carousel-item'+
+          activeImage+'"><img class="d-block w-100" src="../assets/images/storyboards/'+
+          image+'" alt="'+image+'"></div>');
+      });
+      slideshowContent = slideshowContent.concat('<h5 class="slideshow-title">'+
+        slideshow.title+'</h5><p class="slideshow-subtitle">'+
+        slideshow.subtitle+'</p><p class="slideshow-description">'+
+        slideshow.description+'</p><div id="'+
+        slideshow.key+'-slideshow" class="carousel" data-ride="carousel" data-wrap="false" data-interval="false"><ol class="carousel-indicators">'+
+        indicators+'</ol><div class="carousel-inner">'+
+        images+'<a class="carousel-control-prev" href="#'+
+        slideshow.key+'-slideshow" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#'+
+        slideshow.key+'-slideshow" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a></div></div>');
+    });
+    $('#slideshow-wrapper').html(slideshowContent);
 }
 
 const updateMenuItems = (menuItems, page) => {

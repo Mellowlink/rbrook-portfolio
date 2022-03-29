@@ -109,6 +109,7 @@ const videos = [
 
 const slideshows = [
   {
+    key: 'title', //this should be unique, not spaces or special characters other than underscore and hyphen
     title: 'Title',
     subtitle: 'A Slideshow (Winter 1349)',
     description: 'This is a slideshow from some year or whatever lol',
@@ -122,15 +123,16 @@ const slideshows = [
     ]
   },
   {
+    key: 'testy-test', //this should be unique, not spaces or special characters other than underscore and hyphen
     title: 'Testy test',
     subtitle: 'A test slidey show (Autumn 2007)',
     description: 'This sure is a test, plus more text to make it longer for design placeholder purposes etc.',
     images: [
       'heist1.png',
-      'heist2.png',
-      'heist3.png',
-      'heist4.png',
-      'heist5.png',
+      'hiest2.png',
+      'hiest3.png',
+      'hiest4.png',
+      'hiest5.png',
     ]
   },
 ]

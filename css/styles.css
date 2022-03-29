@@ -216,6 +216,18 @@ body{
     -webkit-box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 16%), 0 5px 10px 0 rgb(0 0 0 / 12%);
     box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 16%), 0 5px 10px 0 rgb(0 0 0 / 12%);
   }
+  .carousel{
+    margin-bottom: 56px;
+  }
+  .carousel .carousel-control-next-icon, .carousel .carousel-control-prev-icon{
+    background-color: #9e9e9ede;
+    width: 32px;
+    height: 32px;
+    border-radius: 24px;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    top: 468px;
+  }
 
 @media screen and (max-width: 1060px) {
   .navbar-full .navbar-brand {
@@ -236,6 +248,9 @@ body{
   }
   .carousel-inner{
     width: 800px;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    top: 372px;
   }
 }
 
@@ -273,6 +288,9 @@ body{
   }
   .carousel-inner{
     width: 640px;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    top: 286px;
   }
 }
 
@@ -397,6 +415,9 @@ body{
   .carousel-inner{
     width: 426px;
   }
+  .carousel-control-next, .carousel-control-prev {
+    top: 172px;
+  }
 }
 
 @media screen and (max-width: 460px){
@@ -406,6 +427,9 @@ body{
   }
   .carousel-inner{
     width: 256px;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    top: 92px;
   }
 }
 
