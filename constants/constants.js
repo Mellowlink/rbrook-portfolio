@@ -1,11 +1,13 @@
 const strings = {
   logoText: "Rebecca Brook", //Amatic
-
+  bioText: "Rebecca Brook is an artist and animator who graduated with distinction from the BFA Drawing & Painting program at OCADU in 2014. In 2018, she earned an advanced diploma from Loyalist College in Animation and Game Development.<br><br>Rebecca has worked many roles at Taqqut Productions since 2018 including designer and storyboard artist. Currently, she is the pre-production supervisor for the studio’s in-house animation projects.",
+  emailAddress: "rebecca.c.brook@gmail.com",
 }
 
 const images = {
   homeImageDesktop: "title_v02.png",
   homeImageMobile: "title_v02-placeholder-flipped.png",
+  contactImage: "contact_splash.png",
   designImages: [
     "beclay01.jpg",
     "final_charactersheet01.jpg",

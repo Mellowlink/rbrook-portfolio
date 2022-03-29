@@ -25,6 +25,8 @@ const updatePageContent = (strings, page) => {
     break;
     case 'contact':
       $('#mobile-page-title').html('Contact');
+      //$('#email-address').html(strings.emailAddress);
+      // $('#contact-bio').html(strings.bioText);
     break;
   }
 }
@@ -109,6 +111,8 @@ const updateImages = (images, page) => {
       });
       break;
     case 'contact':
+      // $('#contact-splash').attr("src","../assets/images/contact/"+images.contactImage);
+      // $('#contact-splash').attr("alt",images.contactImage);
       break;
   }
 }
