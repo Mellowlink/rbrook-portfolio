@@ -25,8 +25,8 @@ const updatePageContent = (strings, page) => {
     break;
     case 'contact':
       $('#mobile-page-title').html('Contact');
-      //$('#email-address').html(strings.emailAddress);
-      // $('#contact-bio').html(strings.bioText);
+      $('#email-address').html('<a href="mailto:'+strings.emailAddress+'"><i class="fas fa-envelope fa-lg"></i>'+strings.emailAddress+'</a>');
+      $('#contact-bio').html(strings.bioText);
     break;
   }
 }
@@ -111,8 +111,8 @@ const updateImages = (images, page) => {
       });
       break;
     case 'contact':
-      // $('#contact-splash').attr("src","../assets/images/contact/"+images.contactImage);
-      // $('#contact-splash').attr("alt",images.contactImage);
+      $('#contact-image-main').attr("src","../assets/images/contact/"+images.contactImage);
+      $('#contact-image-main').attr("alt",images.contactImage);
       break;
   }
 }
@@ -181,7 +181,7 @@ const updateMenuItems = (menuItems, page) => {
   document.getElementById("nav-items-mobile").innerHTML = items;
 }
 
-const updateSocials = (socialMedia) => {
+const updateSocials = (socialMedia, fillContact = false) => {
   //loop through the configured social media items and populate the icon links
   var items = '';
   socialMedia.map((item) => {
@@ -189,6 +189,7 @@ const updateSocials = (socialMedia) => {
   });
   document.getElementById("mobile-socials").innerHTML = items;
   document.getElementById("footer-socials").innerHTML = items;
+  if (fillContact === true) { document.getElementById("contact-socials").innerHTML = items; }
 }
 
 const showMenu = () => {

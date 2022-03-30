@@ -91,7 +91,21 @@
       </div>
     </div>
     <!-- End Mobile Header & Menu -->
-
+    <div id="contact-wrapper" class="contact-wrapper">
+      <!-- Bio Content -->
+      <div class="row">
+        <div class="col-md-5"><img id="contact-image-main" class="contact-image-main" src=""></img></div>
+        <div id="contact-bio" class="contact-bio col-md-7"></div>
+      </div>
+      <!-- End Bio Content -->
+      <!-- Contact Info -->
+      <div id="email-address" class="email-address">
+      </div>
+      <div id="contact-socials" class="contact-socials">
+        <!-- Social icons populated in javascript here- -->
+      </div>
+      <!-- End Contact Info -->
+    </div>
     <!-- Footer -->
     <footer class="footer text-center text-lg-start fixed-bottom">
       <section
@@ -115,7 +129,7 @@
       updatePageContent(strings, 'contact');
       updateImages(images, 'contact');
       updateMenuItems(menuItems, 'contact');
-      updateSocials(socialMedia);
+      updateSocials(socialMedia, true);
     </script>
   </body>
 </html>

@@ -234,6 +234,57 @@ body{
     border-radius: 0;
   }
 
+  .contact-wrapper{
+    max-width: 1080px;
+    margin: 20px auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+  }
+  .contact-image-main{
+    max-height: 480px;
+  }
+  .contact-bio{
+    font-family: 'Montserrat', sans-serif;
+    color: #393939;
+    font-size: 1.2rem;
+  }
+  .email-address{
+    font-family: 'Montserrat', sans-serif;
+    color: #393939;
+    margin-top: 16px;
+    font-size: 18px;
+  }
+  .email-address a{
+    color: #393939;
+  }
+  .email-address a:hover{
+    color: #9c9c9c;
+  }
+  .email-address i{
+    margin-right: 10px;
+    font-size: 2em;
+    vertical-align: -0.2em;
+    color: #bf997d;
+  }
+
+  .contact-socials{
+    margin-top: 32px;
+    margin-bottom:24px;
+    font-size: 32px;
+  }
+  .contact-socials a{
+    margin-left:16px;
+    margin-right:16px;
+    -webkit-transition: opacity 0.25s;
+    -moz-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+  }
+  .contact-socials a:hover{
+    opacity: 0.5;
+  }
+
 @media screen and (max-width: 1060px) {
   .navbar-full .navbar-brand {
   font-size: 5rem;
@@ -410,6 +461,36 @@ body{
   .gslide-image img.zoomable{
     width: 100% !important;
   }
+
+  .contact-image-main{
+    max-height: 360px;
+  }
+
+  .contact-socials{
+    margin-top: 32px;
+    margin-bottom:24px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 48px;
+    max-width: 75%;
+  }
+  .contact-socials a{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .contact-socials i{
+    margin-bottom: 40px;
+  }
+
+  .email-address{
+    margin-top: 24px;
+    font-size: 24px;
+  }
+  .email-address i{
+    margin-right: 16px;
+    font-size: 2.25em;
+    vertical-align: -0.25em;
+  }
 }
 
 @media screen and (max-width: 700px){
@@ -427,6 +508,10 @@ body{
     width: 1rem;
     height: 0.2rem;
   }
+
+  .contact-bio{
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 460px){
@@ -443,6 +528,13 @@ body{
   .carousel .carousel-indicators li {
     width: 0.5rem;
     height: 0.2rem;
+  }
+
+  .contact-image-main{
+    max-height: 320px;
+  }
+  .contact-bio{
+    font-size: 1rem;
   }
 }
 
