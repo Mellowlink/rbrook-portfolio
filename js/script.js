@@ -176,9 +176,9 @@ const updateMenuItems = (menuItems, page) => {
     items = items.concat('<li class="nav-item"><a class="nav-link'+disabledClass+'" href="'
     + rootUrl + item.path + '">' + item.text + '</a></li>');
   });
-  document.getElementById("nav-items").innerHTML = items;
-  document.getElementById("nav-items-top").innerHTML = items;
-  document.getElementById("nav-items-mobile").innerHTML = items;
+  $("#nav-items").html(items);
+  $("#nav-items-top").html(items);
+  $("#nav-items-mobile").html(items);
 }
 
 const updateSocials = (socialMedia, fillContact = false) => {
@@ -187,9 +187,9 @@ const updateSocials = (socialMedia, fillContact = false) => {
   socialMedia.map((item) => {
     items = items.concat('<a href="'+item.url+'" class="me-4"><i class="fab fa-'+item.type+' fa-lg"></i></a>');
   });
-  document.getElementById("mobile-socials").innerHTML = items;
-  document.getElementById("footer-socials").innerHTML = items;
-  if (fillContact === true) { document.getElementById("contact-socials").innerHTML = items; }
+  $("#mobile-socials").html(items);
+  $("#footer-socials").html(items);
+  if (fillContact === true) { $("#contact-socials").html(items); }
 }
 
 const showMenu = () => {
