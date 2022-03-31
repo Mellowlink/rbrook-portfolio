@@ -8,8 +8,19 @@ const updatePageContent = (strings, page) => {
   $('#copyright-footer').html('© '+year+' Rebecca Brook');
   $('#copyright-mobile-text').html('© '+year+' Rebecca Brook');
 
+  if (window.location.origin.indexOf('file://') !== -1){
+    $('#brand-desktop').attr('href','../index.html');
+    $('#brand-desktop-small').attr('href','../index.html');
+    $('#brand-mobile').attr('href','../index.html');
+  }
+
   switch(page){
     case 'home':
+    if (window.location.origin.indexOf('file://') !== -1){
+      $('#brand-desktop').attr('href','./index.html');
+      $('#brand-desktop-small').attr('href','./index.html');
+      $('#brand-mobile').attr('href','./index.html');
+    }
     break;
     case 'storyboards':
       $('#mobile-page-title').html('Storyboards');
@@ -163,15 +174,18 @@ const updateMenuItems = (menuItems, page) => {
   var rootUrl = '.';
   var pathUrl = window.location.pathname;
 
-  if (pathUrl != '/'){
-    rootUrl = '..'
-  }
   //loop through the configured menu items and populate the navbar
   var items = '';
   menuItems.map((item) => {
     var disabledClass = '';
-    if (pathUrl == item.path){
+    if (page !== 'home'){
+      rootUrl = '..';
+    }
+    if (pathUrl.indexOf(item.path) !== -1){
       disabledClass = ' disabled';
+    }
+    if (window.location.origin.indexOf('file://') !== -1){
+      item.path = item.path.concat('/index.html');
     }
     items = items.concat('<li class="nav-item"><a class="nav-link'+disabledClass+'" href="'
     + rootUrl + item.path + '">' + item.text + '</a></li>');
