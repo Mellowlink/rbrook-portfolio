@@ -1,4 +1,14 @@
 const updatePageContent = (strings, page) => {
+  var loadingColors = [
+    '#1266f1',
+    '#b23cfd',
+    '#00b74a',
+    '#39c0ed',
+    '#ffa900',
+    '#f93154',
+  ]
+  $('.loading-spinner').css('color', loadingColors[Math.floor(Math.random()*loadingColors.length)]);
+
   $('#brand-desktop').html(strings.logoText);
   $('#brand-desktop-small').html(strings.logoText);
   $('#brand-mobile').html(strings.logoText);
@@ -218,4 +228,8 @@ jQuery($ => {
     $('.navbar-drop-out').toggleClass('navbar-dropped', scroll >= 250);
   });
 });
-//©
+
+$(window).on("load", function() {
+  $('.loading-spinner').toggleClass('loading');
+  $('.everything-wrapper').toggleClass('loading');
+});

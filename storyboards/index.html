@@ -57,6 +57,10 @@
 
   </head>
   <body>
+    <div class="loading-spinner">
+      <div class="spinner-border" role="status"></div>
+      <p class="loading-text">Loading...</p>
+    </div>
     <!-- Desktop Header & Menu -->
     <nav class="navbar justify-content-center mobile-hide">
         <div class="navbar-full"><a id="brand-desktop" class="navbar-brand" href="../"></a></div>
@@ -93,24 +97,26 @@
       </div>
     </div>
     <!-- End Mobile Header & Menu -->
-    <!-- Videos -->
-    <div id="video-wrapper" class="video-wrapper">
-      <h5 class="video-title"></h5>
-      <p class="video-subtitle"></p>
-      <p class="video-description"></p>
-      <iframe class="iframe-video"
-        src=""
-        title="El Title"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-    <!-- End Videos -->
-    <!-- Slideshows -->
-    <div id="slideshow-wrapper" class="slideshow-wrapper">
+    <div class="everything-wrapper loading">
+      <!-- Videos -->
+      <div id="video-wrapper" class="video-wrapper">
+        <h5 class="video-title"></h5>
+        <p class="video-subtitle"></p>
+        <p class="video-description"></p>
+        <iframe class="iframe-video"
+          src=""
+          title="El Title"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <!-- End Videos -->
+      <!-- Slideshows -->
+      <div id="slideshow-wrapper" class="slideshow-wrapper">
 
+      </div>
+      <!-- End Slideshows -->
     </div>
-    <!-- End Slideshows -->
     <!-- Footer -->
     <footer class="footer text-center text-lg-start fixed-bottom">
       <section

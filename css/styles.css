@@ -1,5 +1,31 @@
+@keyframes loading-flash {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 body{
   margin-bottom: 36px;
+}
+.loading-spinner{
+  text-align: center;
+  position: absolute;
+  margin-left: -38px;
+  top: 50%;
+  left: 50%;
+  z-index: 20000;
+
+  font-family: 'Montserrat', sans-serif;
+  color: #e5ccba;
+}
+.spinner-border{
+  animation: spinner-border 0.75s ease-out infinite;
+}
+.loading-text{
+  animation: loading-flash 0.4s alternate infinite;
+}
+
+.loading{
+  display: none;
 }
 
 .navbar{

@@ -65,6 +65,10 @@
 
   </head>
   <body>
+    <div class="loading-spinner">
+      <div class="spinner-border" role="status"></div>
+      <p class="loading-text">Loading...</p>
+    </div>
     <!-- Desktop Header & Menu -->
     <nav class="navbar justify-content-center mobile-hide">
         <div class="navbar-full"><a id="brand-desktop" class="navbar-brand" href="../"></a></div>
@@ -101,10 +105,12 @@
       </div>
     </div>
     <!-- End Mobile Header & Menu -->
-    <!-- Masonry Grid -->
-    <div id="masonry-grid" class="grid">
+    <div class="everything-wrapper loading">
+      <!-- Masonry Grid -->
+      <div id="masonry-grid" class="grid">
+      </div>
+      <!-- End Masonry Grid -->
     </div>
-    <!-- End Masonry Grid -->
     <!-- Footer -->
     <footer class="footer text-center text-lg-start fixed-bottom">
       <section
