@@ -185,6 +185,7 @@ You do not need the `site.manifest` file, you can delete it.
 ## Extras
 ### Adding or removing the random colours of the loading icon
 File: `/js/script.js`
+
 Variable: `var loadingColors`
 
 An array of hex values used as the pool from which a random colour is chosen every time the page loads, which is then used to colour the loading icon.
@@ -193,6 +194,7 @@ You can add or remove as many colours as you wish from this.
 
 ### Change the colours of your social media icons
 File: `/css/styles.css`
+
 Search for: `/* SOCIAL MEDIA */`
 
 This block of CSS contains the colour codes used for each of the supported social media types and their variations, neatly grouped together. You can use either hex values or RGB.
