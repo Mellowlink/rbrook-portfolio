@@ -3,6 +3,16 @@ This is the portfolio website for Rebecca Brook, built to showcase personal and 
 
 The purpose of this guide is to support future maintenance of this portfolio website.
 
+Jump to:
+- [General Information](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#general-information)
+- [Updating Text](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#updating-text)
+- [Updating Images & Videos](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#updating-images--videos)
+- [Adding & Removing Social Media](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#adding--removing-social-media)
+- [Updating your favicon](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#updating-your-favicon)
+- [Extras](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#extras)
+- [Libraries Used](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#libraries-used)
+- [License Info](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#license)
+
 ## General Information
 You can use your favorite text editor to work with this project, but I highly recommend [Atom](https://atom.io/) as it comes preconfigured with most popular language's syntax highlighting, and it contains its own markdown viewer for viewing `.md` files such as this Readme.
 
@@ -13,6 +23,8 @@ Most configuration is stored as javascript objects (eg: `{}`), or arrays of java
   Values used for text and file names of images are stored as properties of these objects for dynamically building each page on load. This will be explained in more detail below, and the config file is heavily commented for future reference.
 
   At the start of each section you'll find the name of the variable used for the relevant content, which you can use to quickly search.
+
+[Back to Top](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#rb-portfolio-website)
 
 ## Updating Text
 Updating text is very straightforward, simply paste or type the text you wish into the appropriate value. You can use HTML tags in your text, though it's best to stick with simple tags such as `<br>` for line breaks, as the stylesheet is already set up to accommodate most layouts and using too many HTML containers may result in unexpected behaviour.
@@ -41,6 +53,8 @@ Updating text is very straightforward, simply paste or type the text you wish in
 
 `emailAddress`: Your email address.
 
+
+[Back to Top](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#rb-portfolio-website)
 
 ## Updating Images & Videos
 Images require nothing more than the filename, provided they've been put in the correct folder. Filenames should not contain any spaces. Most image formats should be fine, including `.gif` but only unanimated images have been tested.
@@ -137,6 +151,7 @@ An array of objects, separated by commas.
 ###### Properties:
 `contactImage`: The image displayed alongside your bio (or above it in the mobile layouts).
 
+[Back to Top](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#rb-portfolio-website)
 
 ## Adding & Removing Social Media
 Supported social media has been configured to display using [Font Awesome](https://fontawesome.com/) icons, making it easy to update the colors & size or swap out the icons for other variations. CSS has already been written to color all supported icons and their variations.
@@ -177,10 +192,14 @@ youtube
 
 `url`: The url to your social media profile/page.
 
+[Back to Top](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#rb-portfolio-website)
+
 ## Updating your favicon
 Use this [favicon generator](https://favicon.io/favicon-converter/) to convert an image of your choice into all the various files you'll need to properly serve up your favicon. These can just be dropped into the root of your website, overwriting the old images. No need to do anything else, the links are already placed in the `<head>` of your pages.
 
 You do not need the `site.manifest` file, you can delete it.
+
+[Back to Top](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#rb-portfolio-website)
 
 ## Extras
 ### Adding or removing the random colours of the loading icon
@@ -199,12 +218,20 @@ Search for: `/* SOCIAL MEDIA */`
 
 This block of CSS contains the colour codes used for each of the supported social media types and their variations, neatly grouped together. You can use either hex values or RGB.
 
-## Libraries used
+[Back to Top](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#rb-portfolio-website)
+
+## Libraries Used
 [GLightbox](https://biati-digital.github.io/glightbox/): Lightbox used in the image galleries for the smooth performance and Title/Description support.
 
 [FlexMasonry](https://github.com/gilbitron/flexmasonry): Used for the masonry grid layouts, chosen for its ease of setup and customization.
 
 [MDBootstrap](https://mdbootstrap.com/): Lightly used for a few things like buttons, a few CSS classes, pre-styled Font Awesome icons, etc.
 
-## License
+[Back to Top](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#rb-portfolio-website)
+
+## License Info
+Released Unlicensed
+
 This is not an open source project, and all content contained herein is the intellectual property of the original creators. Nothing in this repository may be used for personal or commercial purposes, except by the original developer and owner of the images.
+
+[Back to Top](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#rb-portfolio-website)
