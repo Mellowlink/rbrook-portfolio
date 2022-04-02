@@ -118,6 +118,7 @@ body{
   margin: 0 auto;
 }
 
+/* SOCIAL MEDIA */
 .fa-instagram{
   color: #ac2bac;
 }
@@ -139,6 +140,7 @@ body{
 .fa-youtube{
   color: #f20000;
 }
+/* END SOCIAL MEDIA */
 
 .mobile-hide{
   display: flex;
