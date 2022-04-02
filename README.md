@@ -11,7 +11,7 @@ Jump to:
 - [Updating your favicon](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#updating-your-favicon)
 - [Extras](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#extras)
 - [Libraries Used](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#libraries-used)
-- [License Info](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#license)
+- [License Info](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#license-info)
 
 ## General Information
 You can use your favorite text editor to work with this project, but I highly recommend [Atom](https://atom.io/) as it comes preconfigured with most popular language's syntax highlighting, and it contains its own markdown viewer for viewing `.md` files such as this Readme.
