@@ -99,7 +99,7 @@ An array of objects, separated by commas.
 
 `description`: A description of your slideshow. Can contain basic HTML such as line breaks `<br>`
 
-`images`: An array of filenames, seperated by commas. Images must be placed in the `/assets/images/storyboards` folder.
+`images`: An array of filenames, separated by commas. Images must be placed in the `/assets/images/storyboards` folder.
 
 
 ### Design Page
@@ -110,7 +110,7 @@ An array of objects, separated by commas.
 ### Sketchbook Page
 ###### Variable: `const images`
 ###### Properties:
-`sketchbookImages`: An array of filenames, separated by commas. These images must be placed in the `/assets/images/design` folder.
+`sketchbookImages`: An array of filenames, separated by commas. These images must be placed in the `/assets/images/sketchbook` folder.
 
 
 ### Fine Art Page
