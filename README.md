@@ -1,7 +1,9 @@
 # RB Portfolio Website
 This is the portfolio website for Rebecca Brook, built to showcase personal and professional materials for career development at the time of this writing.
 
-The purpose of this guide is to support future maintenance of this portfolio website.
+The purpose of this guide is to support future maintenance of this portfolio website. The info here is written assuming very little to no experience with javascript for the end user.
+
+If you feel you're experienced enough, you'll probably be fine with only referencing the comments in `/config/config.js`, but be sure to check out the [Extras](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#extras) section at the bottom for a little extra customization.
 
 Jump to:
 - [General Information](https://github.com/Mellowlink/rbrook-portfolio/tree/develop#general-information)
