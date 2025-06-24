@@ -1,13 +1,12 @@
-const loadingColors = [
-  '#1266f1',
-  '#b23cfd',
-  '#00b74a',
-  '#39c0ed',
-  '#ffa900',
-  '#f93154',
-]
-
 const updatePageContent = (strings, page) => {
+  var loadingColors = [
+    '#1266f1',
+    '#b23cfd',
+    '#00b74a',
+    '#39c0ed',
+    '#ffa900',
+    '#f93154',
+  ]
   $('.loading-spinner').css('color', loadingColors[Math.floor(Math.random()*loadingColors.length)]);
 
   $('#brand-desktop').html(strings.logoText);
@@ -154,10 +153,9 @@ const updateVideos = (videos) => {
 
 const updateSlideshows = (slideshows) => {
     var slideshowContent = '';
-    slideshows.map((slideshow, slideshowIdx) => {
+    slideshows.map((slideshow) => {
       var indicators = '';
       var images = '';
-      var color = loadingColors[Math.floor(Math.random()*loadingColors.length)];
       slideshow.images.map((image, index) => {
         var activeClass = '';
         var activeImage = '';
@@ -166,51 +164,20 @@ const updateSlideshows = (slideshows) => {
           slideshow.key+'-slideshow" data-slide-to="'+
           index+'"'+activeClass+'></li>');
         images = images.concat('<div class="carousel-item'+
-          activeImage+'"><img class="d-block w-100 lazy" data-src="../assets/images/storyboards/'+
+          activeImage+'"><img class="d-block w-100" src="../assets/images/storyboards/'+
           image+'" alt="'+image+'"></div>');
       });
-      slideshowContent = slideshowContent.concat(
-        '<div class="slideshow-carousel-wrapper" id="'+slideshow.key+'-carousel-wrapper">'+
-          '<div class="carousel-loading-spinner"><div class="spinner-border" role="status" style="color: '+color+';"></div><p class="loading-text">Loading...</p></div>'+
-          '<h5 class="slideshow-title">'+slideshow.title+'</h5><p class="slideshow-subtitle">'+slideshow.subtitle+'</p><p class="slideshow-description">'+slideshow.description+'</p>'+
-          '<div id="'+slideshow.key+'-slideshow" class="carousel" data-ride="carousel" data-wrap="false" data-interval="false">'+
-            '<ol class="carousel-indicators">'+indicators+'</ol>'+
-            '<div class="carousel-inner">'+images+'</div>'+
-            '<a class="carousel-control-prev" href="#'+slideshow.key+'-slideshow" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>'+
-            '<a class="carousel-control-next" href="#'+slideshow.key+'-slideshow" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>'+
-          '</div>'+
-        '</div>'
-      );
+      slideshowContent = slideshowContent.concat('<h5 class="slideshow-title">'+
+        slideshow.title+'</h5><p class="slideshow-subtitle">'+
+        slideshow.subtitle+'</p><p class="slideshow-description">'+
+        slideshow.description+'</p><div id="'+
+        slideshow.key+'-slideshow" class="carousel" data-ride="carousel" data-wrap="false" data-interval="false"><ol class="carousel-indicators">'+
+        indicators+'</ol><div class="carousel-inner">'+
+        images+'<a class="carousel-control-prev" href="#'+
+        slideshow.key+'-slideshow" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#'+
+        slideshow.key+'-slideshow" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a></div></div>');
     });
     $('#slideshow-wrapper').html(slideshowContent);
-
-    $('.slideshow-carousel-wrapper').each(function() {
-      var $wrapper = $(this);
-      var $images = $wrapper.find('img.lazy');
-      var loadedCount = 0;
-      var totalCount = $images.length;
-      if (totalCount === 0) {
-        $wrapper.find('.carousel-loading-spinner').hide();
-        return;
-      }
-      $images.Lazy({
-        scrollDirection: 'vertical',
-        effect: 'fadeIn',
-        visibleOnly: false,
-        afterLoad: function(element) {
-          loadedCount++;
-          if (loadedCount === totalCount) {
-            $wrapper.find('.carousel-loading-spinner').fadeOut();
-          }
-        },
-        onError: function(element) {
-          loadedCount++;
-          if (loadedCount === totalCount) {
-            $wrapper.find('.carousel-loading-spinner').fadeOut();
-          }
-        }
-      });
-    });
 }
 
 const updateMenuItems = (menuItems, page) => {
@@ -255,37 +222,14 @@ const showMenu = () => {
   $('#menu-icon').toggleClass('fa-times');
 }
 
-const hideLoadingSpinner = (spinnerSelector, contentSelector) => {
-  $(spinnerSelector).toggleClass('loading');
-  $(contentSelector).toggleClass('loading');
-}
-
 jQuery($ => {
-  $(window).scroll(() => {
+  $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     $('.navbar-drop-out').toggleClass('navbar-dropped', scroll >= 250);
   });
 });
 
-$(document).ready(() => {
-  hideLoadingSpinner('.loading-spinner', '.everything-wrapper');
-
-  // console.log($('.lazy'))
-
-  $('.lazy').Lazy({
-      scrollDirection: 'vertical',
-      effect: 'fadeIn',
-      visibleOnly: false,
-      delay: 3000,
-      afterLoad: (element) => {
-        console.log('element loaded')
-        console.log(element)
-      },
-      onError: (element) => {
-        console.log('error loading ' + element.data('src'));
-      },
-      onFinishedAll: () => {
-        console.log('lazy finished')
-      }
-  });
+$(window).on("load", function() {
+  $('.loading-spinner').toggleClass('loading');
+  $('.everything-wrapper').toggleClass('loading');
 });
